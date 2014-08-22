@@ -1,4 +1,4 @@
-#READ in all of the necessary files
+#Read in all of the necessary files
 test <- read.table("test/X_test.txt", sep="")
 train <- read.table("train/X_train.txt", sep="")
 test_activity <- read.table("test/y_test.txt", col.names = "activity", sep="")
