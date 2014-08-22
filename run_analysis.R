@@ -71,3 +71,5 @@ complete_data <- rbind(test,train)
 #get the mean of each column for each activity & each subject
 averages <- aggregate(complete_data[,3:81], by=list(subject = complete_data$subject, activity = complete_data$activity), mean)
 
+#output results to tidy.txt
+write.table(averages, file="tidy.txt", sep= "\t", row.name=FALSE)
